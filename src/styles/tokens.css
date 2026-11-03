@@ -1,0 +1,108 @@
+/* Every colour, font and size the page uses. The 3D keyboard's own colours
+   live in src/lib/keyboard.ts (materials) and src/lib/textures.ts. */
+:root {
+  /* colour */
+  --bg: #000;
+  --ink: #f3f2f0;
+  --ink-hover: #fff;
+  --muted: rgba(243, 242, 240, 0.56);
+  --faint: rgba(243, 242, 240, 0.14);
+  --whisper: rgba(243, 242, 240, 0.32);
+  --accent: #e67e22;
+  --on-ink: #0a0a0a;
+  --ghost-hover: rgba(255, 255, 255, 0.06);
+  --shade: rgba(0, 0, 0, 0.72);
+  --shade-soft: rgba(0, 0, 0, 0.35);
+  --shade-none: rgba(0, 0, 0, 0);
+  --heading-shadow: 0 4px 40px rgba(0, 0, 0, 0.5);
+  --label-halo: 0 0 16px #000, 0 0 8px rgba(0, 0, 0, 0.9), 0 0 2px #000;
+  --leader: linear-gradient(90deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.5));
+
+  /* type: Instrument Sans (Google Fonts, OFL), set a little narrow, and
+     Newsreader (Google Fonts, OFL) for the serif "vibe" in the logo */
+  --sans: "Instrument Sans", system-ui, sans-serif;
+  --serif: "Newsreader", Georgia, serif;
+  --w-text: 400;
+  --w-medium: 550;
+  --w-bold: 600;
+  --w-serif: 700;
+  --stretch-display: 95%;
+  --stretch-heading: 93.5%;
+  --stretch-text: 93%;
+  --stretch-body: 92.5%; /* the panels' paragraphs break where the original's do */
+  --stretch-ui: 95%;
+  --stretch-nav: 100%;
+
+  --size-display: clamp(48px, 6.6vw, 112px);
+  --size-heading: clamp(34px, 3.3vw, 54px);
+  --size-lede: clamp(15px, 1.25vw, 18px);
+  --size-closer: clamp(15px, 1.2vw, 19px);
+  --size-brand: 27px;
+  --size-vibe: 1.04em; /* Newsreader runs narrower than the original serif */
+  --size-button: 15px;
+  --size-button-small: 13px;
+  --size-body: 15px;
+  --size-nav: 14px;
+  --size-cue: 13px;
+  --size-label: 13px;
+  --size-label-note: 12px;
+  --size-eyebrow: 12px;
+  --size-footnote: 11px;
+
+  --track-display: -0.02em;
+  --track-heading: -0.015em;
+  --track-ui: -0.01em;
+  --track-eyebrow: 0.02em;
+  --lh-display: 0.95;
+  --lh-heading: 0.98;
+  --lh-lede: 1.45;
+  --lh-body: 1.5;
+  --lh-label: 1.25;
+
+  /* space */
+  --gutter: clamp(16px, 4vw, 56px);
+  --nav-pad: 20px;
+  --nav-gap: 32px;
+  --hero-top: 13vh;
+  --final-top: 12vh;
+  --hero-cta-bottom: 7vh;
+  --panel-bottom: 9vh;
+  --panel-key-top: 16vh;
+  --panel-bottom-phone: 5vh;
+  --panel-width: 360px;
+  --panel-width-wide: 400px;
+  --panel-pool: -60px -90px;
+  --gap-lede: 18px;
+  --gap-heading: 16px;
+  --gap-eyebrow: 14px;
+  --gap-closer: 16px;
+  --gap-cta: 28px;
+  --gap-buttons: 12px;
+  --gap-cue: 18px;
+  --footnote-bottom: 22px;
+  --scroll-length: 1100vh;
+  --measure-lede: 30em;
+
+  /* controls */
+  --button-h: 44px;
+  --button-pad: 22px;
+  --button-h-small: 34px;
+  --button-pad-small: 16px;
+  --radius-pill: 999px;
+  --lift-hover: -1px;
+
+  /* callouts */
+  --leader-length: 46px;
+  --leader-gap: 12px;
+  --label-inset-right: 58px;
+  --label-gap: 2px;
+
+  /* motion (CSS only; the timelines are in src/lib) */
+  --ease-ui: ease;
+  --t-button: 0.25s;
+  --t-link: 0.2s;
+  --t-nudge: 1.8s;
+  --nudge: 4px;
+
+  --phone: 760px; /* reference only: media queries can't read it */
+}

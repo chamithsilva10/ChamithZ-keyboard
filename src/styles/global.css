@@ -1,0 +1,31 @@
+@import "./tokens.css";
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--sans);
+  font-stretch: var(--stretch-text);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* the preloader owns the screen until it lands on the hero */
+body.is-locked {
+  overflow: hidden;
+}
+
+h1,
+h2,
+p {
+  margin: 0;
+}
+
+em {
+  font-style: normal;
+  color: var(--accent);
+}
